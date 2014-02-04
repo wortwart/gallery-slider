@@ -1,0 +1,44 @@
+#panel {
+  width: 860px;
+  height: 202px;
+  list-style-type: none;
+  position: relative;
+  padding: 0 20px;
+  background-color: navy;
+}
+#panel li { /* gegen Opera-Bug */
+ display: inline;
+}
+#panel img {
+  width: 140px;
+  height: 200px;
+  margin-right: 5px;
+  float:left;
+  border: 1px solid #000;
+}
+#panel a img {
+  width: 70px;
+  height: 100px;
+}
+#bildlauf_links, #bildlauf_rechts {
+ position: absolute;
+ height: 202px;
+ width: 20px;
+}
+#bildlauf_links {
+ background: url(back2.gif) no-repeat;
+ left: 0;
+}
+#bildlauf_rechts {
+ background: url(vor2.gif) no-repeat;
+ right: 0;
+}
+.klickbar {
+ cursor: pointer;
+}
+#bildlauf_links.klickbar {
+ background: url(back1.gif) no-repeat;
+}
+#bildlauf_rechts.klickbar {
+ background: url(vor1.gif) no-repeat;
+}
